@@ -7,6 +7,5 @@ public class Sum
         int c = 8;
         int sum = a+b+c;
         System.out.println(sum);
-    
     }
 }
