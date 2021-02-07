@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Factorial {
     public static void main(String[] args){
-        System.out.println("Enter the number");
+        System.out.print("Enter the number: ");
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
 
@@ -12,7 +12,7 @@ public class Factorial {
             factorial *= i;
             i++;
         }
-        System.out.println(factorial);
+        System.out.println("Factorial of " + n + " is " + factorial);
 
 
     }
