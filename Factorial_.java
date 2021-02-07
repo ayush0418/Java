@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class _Factorial {
+public class Factorial_ {
     static int factorial(int n){
         if (n == 0 || n ==1){
             return 1;
