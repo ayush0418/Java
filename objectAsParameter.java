@@ -1,3 +1,4 @@
+//Object As A Parameter
 class Data {
 
     int data1;
@@ -6,7 +7,6 @@ class Data {
 
 class SetData {
     void setData(Data da,int d1,int d2)
-
     {
         da.data1 = d1;
         da.data2 = d2;
