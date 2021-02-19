@@ -1,0 +1,61 @@
+import javax.swing.plaf.PanelUI;
+
+class Employee{
+    static int id;
+    static String name;
+    static int salary;
+
+// The commented program is the second method of creating custom program
+
+//    public void printDetails(){
+//        System.out.println("My name is " + name );
+//        System.out.println("My id is " + id + " and My Salary is "+ salary);
+//    }
+
+    public static void setName(String n) {
+        name = n;
+    }
+    public static void setSalary(int s) {
+        salary=s;
+    }
+    public static void setId(int i) {
+        id=i;
+    }
+
+
+    public static String getName() {
+        return name;
+    }
+    public static int getSalary(){
+        return salary;
+    }
+    public static int getid() {
+        return id;
+    }
+
+}
+
+public class CustomClass {
+    public static void main(String[] args){
+        System.out.println("This is our custom class");
+
+        //Instantiating a new Employee object
+        Employee E = new Employee();
+
+        Employee.setName("Ayush Bansal");
+        Employee.setSalary(100000);
+        Employee.setId(101);
+
+
+        System.out.println("Name: "+ Employee.getName());
+        System.out.println("Salary: "+ Employee.getSalary());
+        System.out.println("Id: " + Employee.getid());
+
+
+//        //Setting Attributes
+//        E.id = 101;
+//        E.name="Ayush Bansal";
+//        E.salary =200000;
+//        E.printDetails();
+    }
+}
