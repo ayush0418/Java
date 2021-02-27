@@ -47,6 +47,5 @@ public class constructor {
         // Base3 c1 = new Base3(1, 2, 3);              // Prints Parameterized Constructor of Base1, Base2 and Base3 class
         // Base4 d = new Base4();                      // Prints Default Constructor of Base1, Base2, Base3 and Base4 class
         // Base4 d1 = new Base4(1,2,3,4);              // Prints Parameterized Constructor of Base4 class and Default Constructor of Base1, Base2 & Base3
-
     }
 }
