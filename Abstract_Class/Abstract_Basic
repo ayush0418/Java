@@ -1,0 +1,57 @@
+//   ABSTRACTION --> Abstraction is an important concept of object-oriented programming that allows us to
+//                     hide unnecessary details and only show the needed information.
+//               --> We use the abstract keyword to create abstract classes and methods.
+
+abstract class Animal {                             // A class containing abstract methods should also be abstract.
+    abstract void makeSound();                      // An abstract method doesn't have any implementation (method body).
+    public void eat() {
+        System.out.println("I can eat.");
+    }
+}
+
+// To implement features of an abstract class, we inherit subclasses from it and create objects of the subclass.
+class Dog extends Animal {
+
+//      Implementation of abstract method
+//      A subclass must override all abstract methods of an abstract class.
+//      (However, if the subclass is declared abstract, it's not mandatory to override abstract methods.)
+
+    @Override
+    public void makeSound() {
+        System.out.println("Bark bark");
+    }
+}
+
+// To implement features of an abstract class, we inherit subclasses from it and create objects of the subclass.
+class Cat extends Animal {
+
+//      Implementation of abstract method
+//      A subclass must override all abstract methods of an abstract class.
+//      (However, if the subclass is declared abstract, it's not mandatory to override abstract methods.)
+
+    @Override
+    public void makeSound() {
+        System.out.println("Meow ");
+    }
+}
+
+class Main {                           // Class name is different from file name because we have not use public keyword.
+    public static void main(String[] args) {
+
+        // create an object of Dog class
+        Dog d1 = new Dog();
+        d1.makeSound();
+        d1.eat();
+
+        // create an object of Cat class
+        Cat c1 = new Cat();
+        c1.makeSound();
+        c1.eat();
+
+//      We cannot create objects of an abstract class but We can create reference of an abstract class(CONCEPT --> DYNAMIC METHOD DISPATCH)
+//        Animal a = new Animal();                      --> Invalid
+        Animal a1 = new Dog();             // reference --> Valid
+        a1.eat();
+        a1.makeSound();
+    }
+}
