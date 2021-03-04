@@ -22,9 +22,9 @@ public class String_Methods
         System.out.println(name.replace("A","Pi"));  // replace the string with new values.
 
         System.out.println(name.startsWith("Ay"));  // returns true if the string starts with "A" and false if not.
-        System.out.println(name.endsWith("h"));    // returns true if the string ends with "h" and false if not.
+        System.out.println(name.endsWith("h"));     // returns true if the string ends with "h" and false if not.
 
-        System.out.println(name.charAt(2));       // returns the char at index 2
+        System.out.println(name.charAt(2));         // returns the char at index 2
 
         String modifiedName = "AyushAyush";
         System.out.println(modifiedName.indexOf("y"));    // returns the first index of the given string starting from first
@@ -36,6 +36,19 @@ public class String_Methods
         System.out.println(name.equals("Ayush"));    // returns true if the string alphabet and case matches [String is case sensitive]
         System.out.println(name.equalsIgnoreCase("aYusH")); // returns true if the string alphabet matches. ignore case sensitive problem
 
-    }
 
+//  The compareTo() method compares two strings lexicographically(Dictionary order).[ A<B<C<.....<Z<a<b<c<....<z  ]
+//  Returns:  An int value: = 0 if the string is equal to the other string.
+//                          < 0 if the string is lexicographically less than the other string
+//                          > 0 if the string is lexicographically greater than the other string (more characters)
+
+        String A = "hello";
+        String B = "world";
+//       (h < w) = <0  -->  string A is lexicographically less than string B 
+        if(A.compareTo(B) < 0){
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
+    }
 }
