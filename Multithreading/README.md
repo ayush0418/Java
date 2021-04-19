@@ -20,3 +20,7 @@ Multitasking is a process of executing multiple tasks simultaneously. We use mul
 | Each process allocates a separate memory area.   | Threads share the same address space.        |
 | A process is heavyweight.    | A thread is lightweight.       |
 | Cost of communication between the process is high.      | Cost of communication between the thread is low.       |
+
+### There are two ways to create a thread:
+* By extending Thread class
+* By implementing Runnable interface.
